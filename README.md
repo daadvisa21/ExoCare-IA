@@ -5,13 +5,15 @@ Es una plataforma integral diseñada para el bienestar de mascotas no convencion
 ## 1. Clonación del Repositorio
 
 **Paso 1: Clonar el proyecto**
+
 Para comenzar con la instalación local o el despliegue, primero debe obtener una copia del código fuente y organizar la estructura del proyecto.
 
 ```bash
-git clone [https://github.com/daadvisa21/ExoCare-IA.git](https://github.com/daadvisa21/ExoCare-IA.git)
+git clone [https://github.com/daadvisa21/ExoCare-IA.git]
 cd ExoCare-IA
 ```
 **Paso 2: Estructura del Proyecto**
+
 El proyecto está organizado de la siguiente manera para separar la lógica de microservicios:
 
 | Recurso | Descripción |
@@ -22,15 +24,19 @@ El proyecto está organizado de la siguiente manera para separar la lógica de m
 | **`README.md`** | Documentación general del proyecto |
 
 ## 🗄️ 2. Configuración de Infraestructura de Datos
+
 Para que el Agente IA no solo sea un chat genérico, sino un experto con memoria, se configuraron dos servicios independientes. Los scripts de inicialización están en la carpeta `/extras`.
 
 **Paso 1: Conocimiento (Elasticsearch + RAG)**
+
 Archivo: `/Carga_Datos_RAG.ipynb`
 
 Se implementó un motor de búsqueda semántica para que la IA consulte fuentes técnicas antes de responder.
+
 **Fuentes Indexadas**: 20 guías web especializadas (WPVet) y los manuales médicos `/exotic companion.pdf` y `/handbook.pdf`
 
 **Paso 2: Memoria (PostgreSQL)**
+
 Archivo: `/Despliegue_Checkpointer.ipynb`
 
 ## ☁️ 3. Configuración de Google Cloud Platform (GCP)
