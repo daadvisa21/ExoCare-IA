@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Forzamos que siempre sea fondo blanco y texto negro */
+body {
+  background-color: white !important;
+  color: #171717 !important;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para que los mensajes del chat se vean bien */
+.chat-message {
+  color: #171717 !important;
+}
+
+/* Por si acaso hay algún contenedor que se ponga oscuro */
+main, div, section {
+  background-color: transparent;
+}
+
+/* Fuerza a que cualquier div que contenga el texto de la IA respete los saltos de línea */
+.ai-message, 
+.chat-container div, 
+main div {
+  white-space: pre-line !important;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
