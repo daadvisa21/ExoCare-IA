@@ -1,0 +1,15 @@
+flask
+flask-cors
+gunicorn
+psycopg[binary,pool]
+psycopg-pool
+werkzeug
+langchain
+langchain-openai
+langchain-core
+langchain-community
+langgraph
+langgraph-checkpoint-postgres
+elasticsearch
+langchain-elasticsearch
+openai
